@@ -1,0 +1,405 @@
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    color: #333333; /* Texto cinza escuro */
+    background-color: #FAFAFA; /* Fundo cinza claro */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    background-color: #CFB291; /* Cinza-azulado claro */
+    color: #5A3122; /* Branco para o texto */
+    padding: 20px;
+}
+
+header #logo img {
+    width: 150px;
+    height: auto;
+    float: left;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra mais sutil */
+}
+
+/* Menu de navegação */
+nav.menu-opcoes ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav.menu-opcoes ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav.menu-opcoes ul li a {
+    color: #FFFFFF; /* Branco para links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav.menu-opcoes ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 20px;
+    background-color: #FFFFFF; /* Fundo branco */
+}
+
+main h2 {
+    color: #5A3122; /* Cinza-azulado */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #95725A; /* Cinza escuro */
+    color: #FFFFFF; /* Texto branco */
+    font-size: 1em;
+	width: 100%; 
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social a {
+    width: 32px;
+    height: 32px;
+    display: block;
+    text-indent: -9999px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.social a:hover {
+    opacity: 0.8;
+}
+
+/* Painéis de Novidades e Mais Vendidos */
+.paineis {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.painel {
+    flex: 1;
+    background-color: #FFFFFF; /* Fundo branco para os painéis */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra mais sutil */
+}
+
+.painel h2 {
+    text-align: center;
+    color: #6A7D89; /* Cinza-azulado */
+    margin-bottom: 15px;
+}
+
+.painel ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.painel li {
+    flex: 1 1 calc(45% - 10px);
+    max-width: calc(45% - 10px);
+    text-align: center;
+    background-color: #E8EAEF; /* Cinza muito claro */
+    border: 1px solid #e1cbb1; /* Borda morron clara */
+    border-radius: 6px; /* Cantos arredondados menores */
+    padding: 10px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.painel li:hover {
+    transform: scale(1.05);
+    background-color: #e3d7bf; /* Fundo levemente mais escuro no hover */
+}
+
+.painel img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.painel figcaption {
+    font-size: 1em;
+    color: #333333; /* Texto cinza escuro */
+    margin-top: 5px;
+}
+.social a[href*="facebook.com"] {
+    background-image: url(../img/facebook.png);
+}
+
+.social a[href*="twitter.com"] {
+    background-image: url(../img/twitter.png);
+}
+
+.social a[href*="instagram.com"] {
+    background-image: url(../img/instagram.png);
+
+}
+
+/* Ajuste no hover das redes sociais */
+.social a:hover {
+    opacity: 0.8;
+}
+/* Estilização da barra de busca e menu de categorias */
+.busca-categorias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+#search {
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    width: 250px;
+    font-size: 1em;
+}
+
+#categorias {
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.busca-categorias button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #95725A; /* marron escuro */
+    color: #FFFFFF; /* Branco */
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.busca-categorias button:hover {
+    background-color: #5A3122; /* Cinza mais escuro */
+}
+/* Ajuste para imagens não relacionadas a livros */
+.jason1 img,
+.caneca1 img,
+.caneca2 img {
+    width: 160px; /* Um pouco maior que antes */
+    max-width: 100%; /* Para respeitar tamanhos responsivos */
+    height: auto; /* Mantém a proporção */
+}
+.funco2 img{
+	width: 190px; /* Um pouco maior que antes */
+    max-width: 100%; /* Para respeitar tamanhos responsivos */
+    height: auto; /* Mantém a proporção */
+}
+.caneca2 img {
+    width: 170px; /* Um pouco maior que antes */
+    max-width: 100%; /* Para respeitar tamanhos responsivos */
+    height: auto; /* Mantém a proporção */
+}
+
+.canecapanico img{
+	width: 150px; /* Um pouco maior que antes */
+    max-width: 100%; /* Para respeitar tamanhos responsivos */
+    height: auto; /* Mantém a proporção */
+}
+.painel h2:before	{
+			content: '\2756';
+			padding-right: 5px;
+			opacity: 0.4;
+	}
+
+/* Ajuste para dispositivos menores */
+@media screen and (max-width: 768px) {
+    .paineis {
+        flex-direction: column; /* Os painéis ficam um embaixo do outro */
+        gap: 20px;
+    }
+
+    .painel li {
+        flex: 1 1 100%; /* Cada item ocupa 100% da largura */
+        max-width: 100%;
+    }
+
+    .painel img {
+        width: 80%; /* Ajusta o tamanho das imagens */
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* para dispositivos menores */
+@media screen and (max-width: 768px) {
+    .paineis {
+        flex-direction: column; /*  painéis ficam um embaixo do outro */
+        gap: 20px;
+    }
+
+    .painel ul {
+        display: grid; /* Define uma grade */
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+        gap: 10px; /* Espaço entre os itens */
+    }
+
+    .painel li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .painel img {
+        width: 100%; /* Ajusta o tamanho das imagens */
+        max-width: 150px; /* Limita o tamanho máximo */
+        height: auto;
+    }
+
+    .painel figcaption {
+        font-size: 0.9em; /* Ajusta o tamanho da legenda */
+        text-align: center;
+        margin-top: 5px;
+    }
+}
+
+/* Ajuste para dispositivos muito pequenos */
+@media screen and (max-width: 480px) {
+    main {
+        padding: 10px; /* Reduz o espaçamento geral */
+    }
+
+    .painel h2 {
+        font-size: 1.5em; /* Reduz o tamanho do título */
+    }
+
+    .painel figcaption {
+        font-size: 0.8em; /* Reduz o tamanho do texto da legenda */
+    }
+
+    header h1 {
+        font-size: 1.8em; /* Ajusta o tamanho do título no cabeçalho */
+    }
+
+    .busca-categorias {
+        flex-direction: column; /* Alinha os itens da busca verticalmente */
+        gap: 5px;
+    }
+
+    #search, #categorias, .busca-categorias button {
+        width: 100%; /* Ocupa toda a largura disponível */
+    }
+
+    .painel img {
+        max-width: 120px; /* Reduz o tamanho máximo das imagens */
+    }
+}
+/* Ajustes para dispositivos menores */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* Coloca os elementos em coluna */
+        text-align: center; /* Centraliza os textos */
+        gap: 10px;
+    }
+
+    header img {
+        max-width: 60px; /* Diminui o tamanho do logo */
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Reduz o tamanho do título */
+    }
+
+    header .busca-categorias {
+        width: 100%; /* Garante que ocupa todo o espaço disponível */
+        max-width: 100%; /* Remove limite de largura */
+    }
+
+    #search, #categorias, .busca-categorias button {
+        width: 100%; /* Cada campo ocupa 100% da largura */
+    }
+}
+
+/* Ajustes para dispositivos muito pequenos */
+@media screen and (max-width: 480px) {
+    header img {
+        max-width: 100px; /* Tamanho ainda menor para o logo */
+    }
+
+    header h1 {
+        font-size: 1.2em; /* Reduz o título ainda mais */
+    }
+}
+/* Ajustes para dispositivos menores */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* Coloca os elementos em coluna */
+        text-align: center; /* Centraliza os textos */
+        gap: 10px;
+    }
+
+    header img {
+        max-width: 60px; /* Diminui o tamanho do logo */
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Reduz o tamanho do título */
+    }
+
+    header .busca-categorias {
+        display: none; /* Oculta a barra de busca e categorias */
+    }
+}
+
+/* Ajustes para dispositivos muito pequenos */
+@media screen and (max-width: 480px) {
+    header img {
+        max-width: 60px; /* Tamanho ainda menor para o logo */
+    }
+
+    header h1 {
+        font-size: 1.2em; /* Reduz o título ainda mais */
+    }
+
+    header .busca-categorias {
+        display: none; /* Mantém a barra oculta */
+    }
+}
+
+
+

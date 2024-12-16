@@ -1,0 +1,133 @@
+/* Definindo a largura da container */
+.container {
+    width: 96%;
+}
+
+/* Estilizando o título do cabeçalho */
+header h1 {
+    text-align: center;
+}
+
+/* Ajustando a largura máxima das imagens no cabeçalho */
+header h1 img {
+    max-width: 50%;
+}
+
+/* Escondendo a sacola de compras em dispositivos móveis */
+.sacola {
+    display: none;
+}
+
+/* Centralizando o menu de opções */
+.menu-opcoes {
+    position: static;
+    text-align: center;
+}
+
+/* Estilizando os itens do menu de opções */
+.menu-opcoes ul li {
+    display: inline-block;
+    margin: 5px;
+}
+
+/* Ajustando a busca e os departamentos para ocupar 100% da largura */
+.busca, .menu-departamentos, .destaque img {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 15px; /* Adicionando espaço entre os elementos */
+}
+
+/* Ajustando o painel e seus itens para empilhar verticalmente */
+.painel {
+    width: auto;
+}
+
+.painel li {
+    width: 100%;  /* Empilhando os painéis verticalmente */
+    margin-bottom: 15px;  /* Espaçamento entre os itens */
+}
+
+.painel img {
+    width: 100%; /* Garantindo que as imagens ocupem toda a largura disponível */
+}
+
+/* Definindo adaptações para telas médias (480px) */
+@media (min-width: 480px) {
+    header h1 {
+        margin: 5px 0;
+    }
+
+    .menu-departamentos {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* Ajustando o número de colunas no menu de departamentos */
+    .menu-departamentos nav > ul {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+/* Definindo adaptações para telas maiores (720px) */
+@media (min-width: 720px) {
+    header h1 {
+        text-align: left;
+    }
+
+    /* Menu de opções posicionado de forma absoluta */
+    .menu-opcoes {
+        position: absolute;
+    }
+
+    /* Exibindo a sacola de compras */
+    .sacola {
+        display: block;
+    }
+
+    /* Ajustando o tamanho dos itens do painel */
+    .painel li {
+        width: 15%;
+    }
+
+    /* Ajustando o tamanho da busca e do menu de departamentos */
+    .busca, .menu-departamentos {
+        margin-right: 1%;
+        width: 30%;
+    }
+
+    /* Ajustando o número de colunas no menu de departamentos */
+    .menu-departamentos nav > ul {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+
+    /* Ajustando a largura das imagens de destaque */
+    .destaque img {
+        width: 69%;
+    }
+}
+
+/* Estilo do conteúdo das seções */
+section h1, section h2 {
+    text-align: center;
+}
+
+section p {
+    text-align: justify;
+}
+
+/* Definindo ajustes gerais no menu de opções */
+.menu-opcoes {
+    position: static;
+    text-align: center;
+}
+
+
+
+
+
+
+	
